@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Logika / Algoritma</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #1f1b24;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    }
+    h1 {
+      color: #bb86fc;
+      text-align: center;
+    }
+    h2 {
+      color: #ffffff;
+      border-bottom: 1px solid #bb86fc;
+      padding-bottom: 10px;
+    }
+    .form-group {
+      margin: 20px 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #bb86fc;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background: #2d2d2d;
+      color: #fff;
+    }
+    button {
+      background: #bb86fc;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      color: #121212;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #9b5de5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>TUGAS LOGIKA / ALGORITMA</h1><h2>Format Jawaban: PDF</h2>
+<p>Catatan penting: Penggunaan AI dalam bentuk apa pun <b>DILARANG KERAS</b>. Jawaban harus murni dari pemikiran pribadi.</p>
+
+<h2>1. Algoritma Operasi Senter</h2>
+<p>Jelaskan langkah-langkah cara mengoperasikan sebuah senter secara sistematis dan logis:</p>
+<p>Contoh format:
+  <br>Langkah 1: ...
+  <br>Langkah 2: ...
+</p>
+
+<h2>2. Navigasi Player Menuju Berlian di Papan 10x10</h2>
+<p>Posisi awal Player: Kolom 1, Baris 10<br>
+Posisi Berlian: Kolom 9, Baris 7</p>
+<p>Gunakan format:
+  <pre>
+
+=== NAMA ALGORITMA === 
+--start 
+[up] 
+[down] 
+[right] 
+[left] 
+--end 
+
+</pre> 
+</p> 
+
+<p>Contoh tips: 
+<pre> 
+--start 
+[up]-300 
+[right]-8 
+--end
+</pre> 
+</p>
+
+<h2>3. Solusi Teknologi untuk Mencegah Pencurian Sendal</h2>
+<p>Rancang solusi berbasis teknologi:<br>
+- Jelaskan cara kerja<br>
+- Fitur utama<br>
+- Manfaatnya</p>
+
+<h2>Input Jawaban</h2>
+<div class="form-group">
+  <label for="nama">Nama Lengkap</label>
+  <input type="text" id="nama" placeholder="Masukkan nama Anda">
+</div>
+<div class="form-group">
+  <label for="link">Link PDF Jawaban</label>
+  <input type="text" id="link" placeholder="Masukkan link file PDF Anda">
+</div>
+<button onclick="kirimWA()">Kirim Jawaban ke WhatsApp</button>
+
+  </div>  <script>
+    function kirimWA() {
+      let nama = document.getElementById('nama').value;
+      let link = document.getElementById('link').value;
+      if (nama === '' || link === '') {
+        alert("Harap isi semua kolom!");
+        return;
+      }
+      let pesan = `Halo, berikut jawaban saya:\nNama: ${nama}\nLink PDF: ${link}`;
+      let noWA = '6287731949761';
+      let url = `https://wa.me/${noWA}?text=${encodeURIComponent(pesan)}`;
+      window.open(url, '_blank');
+    }
+  </script></body>
+</html>
